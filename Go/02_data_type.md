@@ -1,6 +1,7 @@
 # 02. 데이터 타입
 
-[예제로 배우는 Go 프로그래밍 - Go 데이터 타입](http://golang.site/go/article/5-Go-%EB%8D%B0%EC%9D%B4%ED%83%80-%ED%83%80%EC%9E%85)
+[예제로 배우는 Go 프로그래밍 - Go 데이터 타입](http://golang.site/go/article/5-Go-%EB%8D%B0%EC%9D%B4%ED%83%80-%ED%83%80%EC%9E%85) <br>
+[GoLang 시작하기 - 02 데이터 타입](https://wikidocs.net/163791)
 
 <br>
 
@@ -67,7 +68,7 @@ fmt.Println(f, u)            // 출력값 : 100 100
 str := "ABC"
 bytes := []byte(str)
 str2 := string(bytes)
-fmt.Println(bytes)          // 출력값 : [65 66 67]
+fmt.Println(bytes)           // 출력값 : [65 66 67]
 ```
 암묵적 변환이 일어나지 않으므로 타입을 변환하기 위해서는 명시적으로 지정이 필요하다.
 <br>
