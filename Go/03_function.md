@@ -29,8 +29,8 @@
     ```
 - 매개변수와 반환값이 있는 함수
     ```go
-    func lenAndUpper(name string) (int, string) {
-	return len(name), strings.ToUpper(name)
+    func upper(name string) string {
+	    return strings.ToUpper(name)
     }
     ```
 
@@ -112,4 +112,32 @@ func main() {
 ```
 [apple banana cherry durian]
 [alpha bravo charlie]
+```
+
+
+<br>
+<br>
+
+> ## Return
+
+### 1) 복수 개의 반환값
+- 반환갑의 개수만큼 반환 타입을 명시
+- 복수 개의 반환 타입을 입력할 경우 `()` 안에 명시
+```go
+func lenAndUpper(name string) (int, string) {
+	return len(name), strings.ToUpper(name)
+}
+```
+
+<br>
+
+### 2) Named Return Parameter
+- 이름이 있는 반환 인자를 사용하여 반환 가능
+- `return` 키워드 뒤에 명시하던 반화값들을 반환 타입 앞에 함꼐 명시
+```go
+func lenAndLower(name string) (length int, lower string) {
+	length = len(name)
+	lower = strings.ToLower(name)
+	return
+}
 ```
